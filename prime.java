@@ -5,6 +5,7 @@ public class prime {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a number:");
         int num = scanner.nextInt();
+	//This is a comment
         int flag = 0;
         int i = 2;
         if (i < num) {
