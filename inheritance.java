@@ -8,6 +8,9 @@ class Road extends vehicle{
     public void Bike(){
         System.out.println("It is a two wheeler");
     }
+    public void one(){
+    super.usage();
+    }
 }
 class Rail extends vehicle{
     public void Train(){
@@ -33,5 +36,6 @@ public static void main(String[] args){
     f.Car();
     f.Bike();
     r.Train();
+    f.one();
 }
 }
