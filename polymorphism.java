@@ -13,10 +13,11 @@ class newcalculator extends calculator{
 }
 public class polymorphism {
     public static void main(String[] args){
-        calculator cal=new calculator();
-        calculator calcu=new calculator();
+        //calculator cal=new calculator();
+        //calculator calcu=new calculator();
+        newcalculator cal= new newcalculator();
         System.out.println("Addition of 2 numbers: "+ cal.calculate(5,7));
         System.out.println("Addition of 3 numbers: "+ cal.calculate(2, 4, 8));
-        System.out.println("Addition of 2 numbers in child class: "+calcu.calculate(9, 2));
+       // System.out.println("Addition of 2 numbers in child class: "+cal.calculate(9, 2));
     }
 }

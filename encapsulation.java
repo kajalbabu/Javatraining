@@ -1,4 +1,4 @@
-  class Student{
+  public class encapsulation{
    private String name;
    private int rollno;
 
@@ -17,10 +17,9 @@
    public int getrollno(){
     return rollno;
    }
-}
-   public class encapsulation{
+   
     public static void main(String[] args){
-      Student encaps= new Student();
+      encapsulation encaps= new encapsulation();
       encaps.setname("Kajal");
       encaps.setrollno(101);
       System.out.println("Name: "+encaps.getname() +" and Roll No: "+encaps.getrollno());

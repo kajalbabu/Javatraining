@@ -1,15 +1,20 @@
 
     class overloading{
-        public int square(int a, int b){
-            return a*b;
+        public int divide(int a, int b) throws ArithmeticException{
+            return a/b;
     }
-        public double square(double a, double b){
-            return a*b;
+        public double divide(double a, double b){
+            return a/b;
     }
     public static void main(String[] args){
         overloading obj= new overloading();
-        System.out. println(obj.square(2,5));
-        System.out. println(obj.square(4.7,6.3));
+        try{
+        System.out. println(obj.divide(8.7,6.3));
+        System.out. println(obj.divide(5,0));
+        }
+        catch(ArithmeticException e){
+            System.out.println("Exception occure:"+e);
+        }
     }
     }
     
