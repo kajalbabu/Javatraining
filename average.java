@@ -11,7 +11,7 @@ public class average {
         int[] array = new int[l];
         System.out.println("Enter the array elements:");
         try {
-            for (int i = 0; i <= l; i++) {
+            for (int i = 0; i < l; i++) {
                 array[i] = scanner.nextInt();
             }
         } catch (ArrayIndexOutOfBoundsException e) {
