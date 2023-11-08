@@ -42,5 +42,7 @@ public class thread {
         Thread thread2=new Thread(obj2);
         thread.start();
         thread2.start();
+       
+
     }
 }
