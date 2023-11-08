@@ -1,23 +1,23 @@
-class A implements Runnable{
-    int count=0;
-    public synchronized void increment(){
-        count++;
-    }
-    public  void run(){
-                for(int i=0;i<1000;i++){
-                    increment();
-                }
-            }
+class thread1 implements Runnable{
+    public synchronized void run(){
+        int sum=0;
+        for(int i=0;i<5;i++){
+            sum=sum+5;
+            System.out.println(sum);
+        }
+      try {
+            Thread.sleep(100);
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+      }
 }
-public class threadSynchronization {
-    public static void main(String[] args) throws Exception{
-        A obj=new A();
+public class threadSynchronization{
+    public static void main(String [] args) throws InterruptedException{
+        thread1 obj=new thread1();
         Thread t1=new Thread(obj);
-        Thread t2=new Thread(obj);
         t1.start();
-        t2.start();
         t1.join();
-        t2.join();
-        System.out.println("count="+obj.count);
+        System.out.println(100);
     }
 }
