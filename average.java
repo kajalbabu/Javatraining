@@ -29,5 +29,6 @@ public class average {
         avg = sum / l;
         System.out.println("Average is:" + avg);
         System.out.println("New Line");
+        System.out.println("2nd Line added");
     }
 }
